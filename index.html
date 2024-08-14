@@ -12,7 +12,7 @@
 <body>
   <header class="container">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"> <img src="./img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -20,20 +20,23 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
+          <div class="navbar-nav">
+          
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Shoes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Backpack</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Subscribe</a>
-            </li>
-          </ul>
+          
+          
+              <a class="nav-link" href="#shoes">Shoes</a>
+          
+          
+              <a class="nav-link" href="#backpack">Backpack</a>
+          
+            
+              <a class="nav-link" href="#watch">watch</a>
+          
+          
+              <a class="nav-link" href="#subscribe">Subscribe</a>
+            
+          </div>
         </div>
       </div>
     </nav>
@@ -105,19 +108,19 @@
       <div class="container overflow-hidden text-center">
         <div class="row gy-5">
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="p-3 d-flex align-items-center justify-content-around bg-warning rounded-3">
+            <div class="p-3 d-flex align-items-center justify-content-around rounded-3" style="background-color: #ffa500;">
               <h1 class="text-white">watch</h1>
               <img src="./img/watch.png" width="100px">
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="p-3 d-flex align-items-center justify-content-around bg-info rounded-3">
+            <div class="p-3 d-flex align-items-center justify-content-around rounded-3" style="background-color:#da70d6">
               <h1 class="text-white">bag</h1>
               <img src="./img/bag.png" width="100px">
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="p-3 d-flex align-items-center justify-content-around bg-success rounded-3">
+            <div class="p-3 d-flex align-items-center justify-content-around rounded-3" style="background-color: #0000ff;">
               <h1 class="text-white">shoe</h1>
               <img src="./img/shoes.png" width="100px">
             </div>
@@ -127,7 +130,7 @@
       </div>
     </section>
     <!-- shoes -->
-    <section class="container my-5">
+    <section class="container my-5" id="shoes">
       <h3>Shoes</h3>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -152,7 +155,7 @@
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             </div>
             <div class="m-3">
-              <h3>$120</h3>
+              <h3>$320</h3>
               <button type="button" class="btn btn-danger btn-lg">Buy Now &gt;&gt;</button>
             </div>
           </div>
@@ -166,7 +169,7 @@
                 content. This card has even longer content than the first to show that equal height action.</p>
             </div>
             <div class="m-3">
-              <h3>$120</h3>
+              <h3>$350</h3>
               <button type="button" class="btn btn-danger btn-lg">Buy Now &gt;&gt;</button>
             </div>
           </div>
@@ -175,15 +178,15 @@
     </section>
     <!-- bag part -->
     <section>
-      <section class="container">
+      <section class="container" id="backpack">
         <h3>Bag pack</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100 border border-0 shadow-lg rounded-3">
               <img src="./img/bag-1.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Supply 350</h5>
-                <h3>$120</h3>
+                <h5 class="card-title">OGIO</h5>
+                <h3>$420</h3>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
               </div>
@@ -196,8 +199,8 @@
             <div class="card h-100 border border-0 shadow-lg rounded-3">
               <img src="./img/bag-2.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Nike 360</h5>
-                <h3>$120</h3>
+                <h5 class="card-title">BURTON</h5>
+                <h3>$500</h3>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
               </div>
               <div class="m-3">
@@ -209,8 +212,8 @@
             <div class="card h-100 border border-0 shadow-lg rounded-3">
               <img src="./img/bag-3.png" class="card-img-top" width="70px" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Red Airmax</h5>
-                <h3>$120</h3>
+                <h5 class="card-title">TRIVOR</h5>
+                <h3>$530</h3>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This card has even longer content than the first to show that equal height action.</p>
               </div>
@@ -225,47 +228,47 @@
     </section>
     <!-- watch -->
     <section>
-      <section class="container my-5">
+      <section class="container my-5" id="watch">
         <h3>Shoes</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100 border border-0 shadow-lg rounded-3">
-              <img src="./img/watches_PNG101457.png" class="card-img-top" alt="...">
+              <img src="./img/W 1.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Supply 350</h5>
+                <h5 class="card-title">TITAN WATCH</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
               </div>
               <div class="m-3">
-                <h3>$120</h3>
-                <button type="button" class="btn btn-danger btn-lg">Buy Now &raquo;</button>
+                <h3>$220</h3>
+                <button type="button" class="btn btn-lg" style="background-color: #ff3484;">Buy Now &raquo;</button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100 border border-0 shadow-lg rounded-3">
-              <img src="./img/w1.png" class="card-img-top" alt="...">
+              <img src="./img/W2.png" class="card-img-top ml-2" style="width:300PX; height:400PX;" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Nike 360</h5>
+                <h5 class="card-title">ROLEX</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
               </div>
               <div class="m-3">
                 <h3>$120</h3>
-                <button type="button" class="btn btn-danger btn-lg">Buy Now &gt;&gt;</button>
+                <button type="button" class="btn btn-lg" style="background-color: #ff3484;">Buy Now &gt;&gt;</button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100 border border-0 shadow-lg rounded-3">
-              <img src="./img/81CglBHsEnL._AC_SY550_.jpg" class="card-img-top" width="70px" alt="...">
+              <img src="./img/W3.jpg"class="card-img-top" style="width: 300PX; height: 400PX;" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Red Airmax</h5>
+                <h5 class="card-title">CASIO</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This card has even longer content than the first to show that equal height action.</p>
               </div>
               <div class="m-3">
                 <h3>$120</h3>
-                <button type="button" class="btn btn-danger btn-lg">Buy Now &gt;&gt;</button>
+                <button type="button" class="btn btn-lg" style="background-color: #ff3484;">Buy Now &gt;&gt;</button>
               </div>
             </div>
           </div>
@@ -273,10 +276,10 @@
       </section>
     </section>
     <!-- form -->
-     <section class="container my-5">
+     <section class="container my-5" id="subscribe">
       <div class="d-flex justify-content-center bg-danger-subtle p-5 rounded-3">
         <div>
-          <h2>lets stay in touch</h2>
+          <h2>LETS STAY IN TOUCH</h2>
           <p>Get update on sales, specials and more</p>
           <form>
             <div class="mb-3">
